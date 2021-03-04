@@ -94,6 +94,7 @@ body {
   transition: 0.3s;
   cursor: pointer;
 }
+
 .piano-key:hover {
   background-color: #fff;
 }
@@ -140,6 +141,10 @@ body {
   bottom: -45px;
   left: 20px;
   transition: 0.3s;
+}
+.letter::before,
+.letter::after{
+  content: attr(data-letter);
 }
 .piano-key::after {
   display: none;
